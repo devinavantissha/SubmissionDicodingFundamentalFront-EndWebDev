@@ -1,0 +1,384 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: linear-gradient(to right, #22c1c3, #fdbb2d);
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.menu-bar{
+	text-align: center;
+	display: inline;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;	
+}
+
+.menu-bar ul{
+	display: inline-flex;
+	list-style: none;
+	color: #222f3e;
+}
+
+.menu-bar ul li{
+	width: 140px;
+	margin: 15px;
+	padding: 10px;
+}
+
+.menu-bar ul li a{
+	text-decoration: none;
+	color: #222f3e;
+}
+
+.menu-bar ul li:hover{
+	background: #26de81;
+	border-radius: 3px;
+}
+
+.menu-bar .fa{
+	margin-right: 5px;
+}
+
+.sub-menu-1{
+	display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background:  #26de81;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+	display: block;
+	margin: 10px; 
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+	border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+	color: #4b6584;
+}
+
+.form-inline{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.form-control{
+	border-radius: 0.25rem;
+	padding: 0.375rem 0.75rem;
+	margin: 0px 8px 0px 0px;
+	padding: 6px 12px;
+	border: 1px solid #ced4da;
+}
+
+.btn{
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	border-radius: 0.24rem;
+}
+
+.btn-outline-success{
+	color: black;
+	border-color: black;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.text-center{
+	text-align: center!important;
+}
+
+.container{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container1{
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.explore .container{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.lead{
+	font-size: 1rem;
+	font-weight: 300;
+}
+.text-muted{
+	color: #2C3A47!important;
+}
+p{
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	flex-grow: 1;
+}
+
+ .col-md-4{
+    position: relative;
+    width: 33.3%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    user-select: none;
+}
+
+.box-img, .box-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.box-img, .box-img-bottom, .box-img-top {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.box-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.justify-content-between {
+    -ms-flex-pack: justify!important;
+    justify-content: space-between!important;
+}
+.d-flex {
+    display: flex!important;
+}
+.explore{
+	/* display: flex; */
+	padding: 48px 0px;
+}
+
+@media screen and (min-width: 768px) {
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+}
+
+img{
+	object-fit: cover;
+}
+
+.float-right{
+	float: right!important;
+}
+
+.float-right a{
+	text-decoration: none;
+
+}
+footer p{
+	margin-bottom: .5rem;
+	text-align: center;
+}
+
+footer{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.box-text{
+	font-size: 10pt;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    position: relative;
+    flex: 1 1 auto;
+}
+.btn-group-sm>.btn, .btn-sm {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+button, select {
+    text-transform: none;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+form{
+	padding: 20px;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.equals form{
+	justify-content: center;
+	text-align: center;
+}
+
+footer, h2, h4{
+	padding: 10px;
+}
+
+.card{
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: 222;
+	text-align: center;
+	border: 1px solid rgba(0,0,0,.125);
+    border-radius: .5rem;
+}
+
+.card:hover{
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce{
+    20%{
+        transform: translateY(-6px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-2px);
+    }
+    80%{
+        transform: translateY(0px);
+    }
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.card-subtitle{
+    font-weight: lighter;
+    color: #666;
+    margin-top: 5px;
+}
+
+.card-image{
+    height: 180px;
+}
+
+#pokedex{
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+
